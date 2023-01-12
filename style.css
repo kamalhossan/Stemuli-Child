@@ -1,0 +1,441 @@
+/*!
+Theme Name: Divi-child
+Template: Divi
+Theme URI: http://www.elegantthemes.com/gallery/divi/
+Version: 4.11.4
+Description: Smart. Flexible. Beautiful. Divi is the most powerful theme in our collection.
+Author: Kamal Hossan
+Author URI: http://www.elegantthemes.com
+License: GNU General Public License v2
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+*/
+
+.slick-prev:before,
+    .slick-next:before {
+      color: black;
+    }
+
+    .features-image {
+      height: 300px;
+      width: 100%;
+      overflow: hidden;
+      border-radius: 25px;
+    }
+
+    .custom_row .features-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    
+    /* span.category-highlight {
+      text-align: center;
+      background: yellow;
+      padding: 5px;
+      border-radius: 15px;
+      height: 30px;
+      width: 130px;
+      display: inline-block;
+      vertical-align: middle;
+    } */
+
+    ul.slick-dots li {
+      width: 24%;
+      margin-right: 2px;
+      margin-left: 0px;
+    }
+
+    .slick-dots li button {
+      width: 100%;
+      background-color: #f0f0f0;
+      border-radius: 8px;
+      height: 12px;
+    }
+    ul.slick-dots {
+      padding: 0 !important;
+  }
+
+    li.slick-active button {
+      background-color: #ff6d57;
+    }
+
+    .slick-dots li button:before {
+      content: none;
+    }
+
+    .custom_row {
+      display: flex;
+  }
+  
+  .col-md-half {
+      max-width: 50%;
+  }
+  .col-md-half.last-column {
+    padding-left: 30px;
+}
+
+.custom_slider .post-title {
+    margin: 20px 0;
+
+}
+.custom_slider .post-title h2 {
+  line-height: 1.3em;
+  font-size: 18px;
+}
+ul.post-categories {
+  list-style-type: none !important;
+  display: flex;
+  padding: 0 !important;
+}
+
+ul.post-categories li {
+  min-width: 120px;
+  display: inline-block;
+  background: #ff6d57;
+  border-radius: 15px;
+  margin-right: 15px;
+  text-align: center;
+  color: #fff;
+}
+ul.post-categories li a {
+  color: #fff;
+}
+.custom_slider .right-content {
+  top: 50%;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* MAILCHIMP CUSTOM NEWSLETTER */
+#mc_embed_signup {
+  clear: left;
+  font: 14px Helvetica, Arial, sans-serif;
+  max-width: 450px;
+}
+
+.btn_flex {
+  position: relative;
+}
+
+.optionalParent {
+  position: absolute;
+    top: 3px;
+    right: 4px;
+    text-align: center;
+    height: 43px;
+}
+
+.optionalParent input {
+  background: #FF6D57;
+  border-radius: 100px;
+  border: none;
+  transition: all 0.3s ease-in-out;
+  box-shadow: none;
+  height: 100%;
+  -webkit-box-shadow: none;
+  width: 180px;
+  color: #fff;
+}
+
+.optionalParent input:hover {
+  background: #1b0c46;
+}
+
+.email-box input {
+  width: 100%;
+  height: 50px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(255, 109, 87, 0.2);
+  border-radius: 74px;
+  max-width: 450px;
+  padding-left: 20px;
+  color: white;
+}
+
+#mc_embed_signup div.mce_inline_error {
+  background-color: transparent !important;
+  color: red !important;
+  border-color: 2px solid #FF6D57 !important;
+  padding: 10px !important;
+}
+
+input#mce-EMAIL:focus,
+#mc_embed_signup input:focus {
+  border: 2px solid #FF6D57 !important;
+
+}
+
+input[type=email]:focus {
+  border: 3px solid #FF6D57;
+}
+input#mce-EMAIL:placeholder {
+  color: white;
+}
+input#mce-EMAIL:focus {
+  color: white;
+}
+#mc_embed_signup div.mce_inline_error {
+  font-weight: 400 !important;
+}
+div#mce-success-response {
+  color: #fff;
+  padding: 10px;
+}
+
+@media (max-width: 767px) {
+  .custom_row .col-md-half {
+    width: 100% !important;
+    max-width: 100%;
+    height: 230px;
+  }
+
+  .custom_row {
+      display: unset;
+  }
+
+  .custom_row .features-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+  }
+
+  .custom_row .features-image {
+      height: 230px;
+      object-fit: cover;
+  }
+
+  .custom_row .features-image img {
+      width: 100%;
+  }
+  .col-md-half.last-column {
+    padding-left: 0px;
+  }
+}
+
+
+
+
+/*css for collapsing menu on mobile */
+/*change hamburger icon to x when mobile menu is open*/
+
+#et_mobile_nav_menu .mobile_nav.opened .mobile_menu_bar::before,
+.et_pb_module.et_pb_menu .et_mobile_nav_menu .mobile_nav.opened .mobile_menu_bar::before {
+	content: '\4d';
+}
+
+
+/*adjust the new toggle element which is added via jQuery*/
+
+ul.et_mobile_menu li.menu-item-has-children .mobile-toggle,
+ul.et_mobile_menu li.page_item_has_children .mobile-toggle,
+.et-db #et-boc .et-l ul.et_mobile_menu li.menu-item-has-children .mobile-toggle,
+.et-db #et-boc .et-l ul.et_mobile_menu li.page_item_has_children .mobile-toggle {
+	width: 44px;
+	height: 100%;
+	padding: 0px !important;
+	max-height: 44px;
+	border: none;
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	z-index: 999;
+	background-color: transparent;
+}
+
+
+/*some code to keep everyting positioned properly*/
+
+ul.et_mobile_menu>li.menu-item-has-children,
+ul.et_mobile_menu>li.page_item_has_children,
+ul.et_mobile_menu>li.menu-item-has-children .sub-menu li.menu-item-has-children,
+.et-db #et-boc .et-l ul.et_mobile_menu>li.menu-item-has-children,
+.et-db #et-boc .et-l ul.et_mobile_menu>li.page_item_has_children,
+.et-db #et-boc .et-l ul.et_mobile_menu>li.menu-item-has-children .sub-menu li.menu-item-has-children {
+	position: relative;
+}
+
+
+/*remove default background color from menu items that have children*/
+
+.et_mobile_menu .menu-item-has-children>a,
+.et-db #et-boc .et-l .et_mobile_menu .menu-item-has-children>a {
+	background-color: transparent;
+}
+
+
+/*hide the submenu by default*/
+
+ul.et_mobile_menu .menu-item-has-children .sub-menu,
+#main-header ul.et_mobile_menu .menu-item-has-children .sub-menu,
+.et-db #et-boc .et-l ul.et_mobile_menu .menu-item-has-children .sub-menu,
+.et-db #main-header ul.et_mobile_menu .menu-item-has-children .sub-menu {
+	display: none !important;
+	visibility: hidden !important;
+}
+
+
+/*show the submenu when toggled open*/
+
+ul.et_mobile_menu .menu-item-has-children .sub-menu.visible,
+#main-header ul.et_mobile_menu .menu-item-has-children .sub-menu.visible,
+.et-db #et-boc .et-l ul.et_mobile_menu .menu-item-has-children .sub-menu.visible,
+.et-db #main-header ul.et_mobile_menu .menu-item-has-children .sub-menu.visible {
+	display: block !important;
+	visibility: visible !important;
+}
+
+
+/*adjust the toggle icon position and transparency*/
+
+ul.et_mobile_menu li.menu-item-has-children .mobile-toggle,
+.et-db #et-boc .et-l ul.et_mobile_menu li.menu-item-has-children .mobile-toggle {
+	text-align: center;
+	opacity: 1;
+}
+
+
+/*submenu toggle icon when closed*/
+
+ul.et_mobile_menu li.menu-item-has-children .mobile-toggle::after,
+.et-db #et-boc .et-l ul.et_mobile_menu li.menu-item-has-children .mobile-toggle::after {
+	top: 10px;
+	position: relative;
+	font-family: "ETModules";
+	content: '\33';
+	color: #00d263;
+	background: #f0f3f6;
+	border-radius: 50%;
+	padding: 3px;
+}
+
+
+/*submenu toggle icon when open*/
+
+ul.et_mobile_menu li.menu-item-has-children.dt-open>.mobile-toggle::after,
+.et-db #et-boc .et-l ul.et_mobile_menu li.menu-item-has-children.dt-open>.mobile-toggle::after {
+	content: '\32';
+}
+
+
+/*add point on top of the menu submenu dropdown*/
+
+.et_pb_menu_0.et_pb_menu .et_mobile_menu:after {
+	position: absolute;
+	right: 5%;
+	margin-left: -20px;
+	top: -14px;
+	width: 0;
+	height: 0;
+	content: '';
+	border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+	border-bottom: 20px solid #ffffff;
+}
+
+
+/*adjust the position of the hamburger menu*/
+
+.mobile_menu_bar {
+	position: relative;
+	display: block;
+	bottom: 10px;
+	line-height: 0;
+}
+
+
+/*force the background color and add a rounded border*/
+
+.et_pb_menu_0.et_pb_menu .et_mobile_menu,
+.et_pb_menu_0.et_pb_menu .et_mobile_menu ul {
+	background-color: #ffffff!important;
+	border-radius: 10px;
+}
+
+/*******************************************/
+
+  
+.widget_search #searchsubmit, .et_pb_widget .wp-block-search__button {
+  background: #ff6d57;
+  color: white;
+}
+.et_pb_bg_layout_light .et_pb_widget li a:hover {
+  color: #ff6d57 !important;
+}
+
+/* css for media page tabs caegory content */
+.row.cs_post .post_column {
+  background: white;
+  margin-bottom: 20px;
+  padding: 15px;
+  text-align: left;
+}
+
+
+.row.cs_post .post_column h2 {
+  margin-top: 15px;
+  font-size: 18px;
+  line-height: 1.3em;
+}
+
+.row.cs_post .features-image {
+  border-radius: 0;
+  height: 200px;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+.row.cs_post .features-image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.read_more.cs_btn {
+  border-radius: 25px;
+  font-size: 16px;
+  padding: 7px 15px;
+  background-color: #ff6d57;
+  text-transform: capitalize;
+  transition: all 0.3s ease-in-out;
+  width: 120px;
+  text-align: center;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+.read_more.cs_btn:hover {
+  background: #1b0c46;
+}
+
+.row.cs_post .categories {
+  margin-bottom: 15px;
+}
+
+@media (max-width: 480px) {
+  .optionalParent input {
+    width: 135px;
+  }
+  .row.cs_post .post_column h2 {
+    font-size: 15px;
+  }
+  .row.cs_post .post_column {
+    padding: 10px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .row.cs_post .post_column h2 {
+    font-size: 15px;
+  }
+  .row.cs_post .features-image {
+    height: 120px;
+  }
+  .row.cs_post .post_column {
+    margin-bottom: 15px;
+    padding: 10px;
+  }
+  ul.post-categories li {
+    font-size: 14px;
+    min-width: 80px;
+  }
+  .row.cs_post .categories {
+    margin-bottom: 10px;
+  }
+}

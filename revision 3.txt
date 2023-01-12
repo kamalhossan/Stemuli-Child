@@ -1,0 +1,30 @@
+header menu gap need to be narrow /*done
+slider iamge need be colour by default /* done
+homepage slider /*done
+
+on 480px footer social icon need be fixed /*done
+
+team page 
+all items in the middle /*done
+480px media query should be change to 767px /*done
+
+on footer desktop post icon need to be aligned /* it's hard to manage, I have removed them  */
+and on mobile icon need to removed
+
+all post details content space need to be removed /* done
+features page, and all title text need to smaller on 1024px 26px
+features page all content should be center /* done
+
+1024px footer and header need be fixed mobile /*done
+
+
+@media screen and (max-width: 1024px) and (min-width: 980px){
+.footer .et_pb_column.et_pb_column_0_tb_footer {
+    min-width: 200px;
+}
+}
+
+team_single
+/***********************
+***********************
+***********************/
